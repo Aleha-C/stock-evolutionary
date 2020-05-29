@@ -1,0 +1,36 @@
+{
+  "experiment-settings": {
+    "algorithm": {
+      "type": "ea"
+    },
+    "rng": {
+      "type": "time",
+      "seed": "johnnyapple"
+    },
+    "number-of-runs": "30",
+    "fitness-evaluations": "1000"
+  },
+  "ea-settings": {
+      "initialization-strategy": "uniform-random",
+      "population-seeding": "false",
+      "parent-selection": "uniform-random",
+      "survival": {
+        "strategy": "plus",
+        "selection": "uniform-random"
+      },
+      "termination": "evaluations",
+      "strategy-parameters": {
+        "mu-population-size": "100",
+        "lambda-offspring-count": "10",
+        "parent-tournament-size": "2",
+        "survival-tournament-size": "160",
+        "mutation-rate": "0.3",
+        "no-change-in-front-generations": "10"
+      }
+  },
+  "file-settings": {
+    "log-file-path": "logs/100ShapesRand.txt",
+    "solution-file-path": "solutions/100ShapesRand.txt",
+    "population-seed-file-path": "seed/front.txt"
+  }
+}
